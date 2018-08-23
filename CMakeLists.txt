@@ -12,6 +12,10 @@ else()
 endif()
 
 
-# add executable, link conan libs
+# add executable
 add_executable(wco main.cpp)
+# switch executables to test if you need to change libstdcxx var in conan config
+# add_executable(wco main_libstdcxx.cpp)
+
+# link conan libs (goes here)
 target_link_libraries(wco ${CONAN_LIBS})

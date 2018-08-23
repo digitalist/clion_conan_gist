@@ -7,3 +7,9 @@ conan install . -s build_type=Release --install-folder=cmake-build-release
 
 ( from https://docs.conan.io/en/latest/integrations/clion.html )
 
+If you have troubles linking with a lot of references to [abi:cxx11], some package (poco for main_libstdcxx.cpp)
+requires different lisbstdcxx.
+
+Add a line to: ~/.conan/profiles/default:
+compiler.libcxx=libstdc++11
+
