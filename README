@@ -11,5 +11,6 @@ If you have troubles linking with a lot of references to [abi:cxx11], some packa
 requires different lisbstdcxx.
 
 Add a line to: ~/.conan/profiles/default:
-compiler.libcxx=libstdc++11
+    compiler.libcxx=libstdc++11
+(relates to https://github.com/conan-community/conan-boost/issues/20)
 
