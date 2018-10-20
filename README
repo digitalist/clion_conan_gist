@@ -2,8 +2,12 @@ Default cmake skeleton for tutorial timer project of conan.io
 Works with clion
 
 after creating/opening the project:
-conan install . -s build_type=Debug --install-folder=cmake-build-debug
 conan install . -s build_type=Release --install-folder=cmake-build-release
+conan install . -s build_type=Debug --install-folder=cmake-build-debug
+
+if you need to build libs:
+conan install . -s build_type=Release --build --install-folder=cmake-build-release
+conan install . -s build_type=Debug --build --install-folder=cmake-build-debug
 
 ( from https://docs.conan.io/en/latest/integrations/clion.html )
 
